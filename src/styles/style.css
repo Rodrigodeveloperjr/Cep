@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: rgb(28, 27, 32);
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+h2 {
+  text-align: center;
+}
+
+.form-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#cep-form {
+    margin: 10px 0;
+}
+
+button {
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgb(37, 37, 255);
+  color: #f1f1f1;
+}
+
+input {
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 5px;
+  outline: none;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  margin-right: 5px;
+}
+
+#result {
+  width: auto;
+  height: auto;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  background: rgb(73, 71, 79);
+  border-radius: 10px;
+  visibility: collapse;
+}
+
+#estado, #cidade, #bairro, #rua, #ddd {
+  margin: 0px 10px 10px 15px;
+}
+
+@media only screen and (max-device-width: 525px) {
+  #cep-input { width: 120px; }
+}
+
+@media screen and (max-device-width: 380px) {
+  #cep-form { width: 200px; }
+  #cep-input { margin-left: 8px; }
+}
